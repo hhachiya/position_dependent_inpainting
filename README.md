@@ -60,10 +60,10 @@ python visualize_data.py -data quake-all -mode train -start_ind 0 -display_num 2
 </p>
 
 ## Codes of spatial interpolation
-comming soon
+coming soon
 
 ## Codes of deep inpainting
-comming soon
+coming soon
 
 ## Citation
 ```

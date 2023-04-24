@@ -58,6 +58,8 @@ if args.data == 'toy':
     labels = labels[inds]
     imgs = imgs[inds]
     masks = masks[inds]
+
+print(f"# of images:{len(imgs)}")
 #---------------------
 
 #---------------------
