@@ -1,6 +1,6 @@
 # Position-dependent inpainting
 
-This reposititory provides data and codes used in the paper Position-Dependent Partial Convolutions for Supervised Spatial Interpolation in [ACML2022](https://proceedings.mlr.press/v189/hachiya23a/hachiya23a.pdf) and [MLWA](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4311229). 
+This reposititory provides data and codes used in the paper Position-Dependent Partial Convolutions for Supervised Spatial Interpolation in [ACML2022](https://proceedings.mlr.press/v189/hachiya23a/hachiya23a.pdf) and [MLWA (submitted)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4311229). 
 
 ## Requirement
 - Python 3
@@ -72,6 +72,7 @@ coming soon
   author={Hirotaka Hachiya, Kotaro Nagayoshi, Asako Iwaki, Takahiro Maeda, Naonori Ueda, Hiroyuki Fujiwara},
   booktitle={Proceedings of the 14th Asian Conference on Machine Learning (ACML)},
   year={2022}
+}
 
 @article{SRL:Maeda:2016,
   title = {Seismic-Hazard Analysis of Long-Period Ground Motion of Megathrust Earthquakes in the Nankai Trough Based on 3D Finite-Difference Simulation},
@@ -83,6 +84,5 @@ coming soon
   publisher = {Seismological Society of America},
   doi = {https://doi.org/10.1785/0220160093},
   volume = {87},
-  year = {2016}
-}  
+  year = {2016}  
 }
