@@ -13,9 +13,9 @@ def parse_args():
 
     parser.add_argument('-data',type=str,default='quake-all',help='name of data, \'quake-all\', \'quake-east\', \'quake-west\', or \'toy\' (default=quake-all)')    
     parser.add_argument('-mode',type=str,default='train',help='name of mode, \'train\', \'test\', or \'valid\' (default=train)')
-    parser.add_argument('-cv',type=int,default=0,help='number of cross validation (default=0)')
+    parser.add_argument('-cv',type=int,default=0,help='number of cross validation 0-9 (default=0)')
     parser.add_argument('-start_ind',type=int,default=0,help='start index (default=0)')
-    parser.add_argument('-display_num',type=int,default=5,help='end index (default=5)')
+    parser.add_argument('-display_num',type=int,default=5,help='number of images displayed (default=5)')
 
     return parser.parse_args()
 
@@ -24,13 +24,13 @@ args = parse_args()
 #---------------------
 # conver to data to path
 if args.data == 'quake-all':
-    root_path = f'quake{os.sep}quakeData-all-crossVaridation{args.cv}'
+    root_path = f'data{os.sep}quakeData-all-crossVaridation{args.cv}'
 elif args.data == 'quake-east':
-    root_path = f'quake{os.sep}quakeData-h04h05h09h10-crossVaridation{args.cv}'
+    root_path = f'data{os.sep}quakeData-h04h05h09h10-crossVaridation{args.cv}'
 elif args.data == 'quake-west':
-    root_path = f'quake{os.sep}quakeData-h01h02h06h07-crossVaridation{args.cv}'
+    root_path = f'data{os.sep}quakeData-h01h02h06h07-crossVaridation{args.cv}'
 elif args.data == 'toy':
-    root_path = f'toy{os.sep}stripe-rectData256_v2'
+    root_path = f'data{os.sep}stripe-rectData256_v2'
 
 data_path = os.path.join(root_path,f'{args.mode}.pickle')
 mask_path = os.path.join(root_path,f'{args.mode}_mask.pickle')
@@ -49,7 +49,7 @@ labels = np.array(data['labels'])
 masks = np.squeeze(masks)
 
 # load pixel-wise data exist flag
-existPath = f"quake{os.sep}sea.png" if "quake" in args.data else ""
+existPath = f"data{os.sep}sea.png" if "quake" in args.data else ""
 exist = np.array(Image.open(existPath))/255 if existPath!="" else np.ones(data['images'].shape[1:3])
 
 # sort by label
