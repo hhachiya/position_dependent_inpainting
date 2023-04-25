@@ -44,10 +44,17 @@ python visualize_data.py [-data] [-mode] [-cv] [-start_ind] [-display_num]
 
 ### Examples of visualization
 ~~~bash
-python visualize_data.py -data toy -mode train -start_ind 70 -display_num 1
+python visualize_data.py -data toy -mode train -start_ind 75 -display_num 1
 ~~~
 <p align="center">
-<img src="images/toy_train_70.png"  width="60%" height="60%">  
+<img src="images/toy_train_75.png"  width="60%" height="60%">  
+</p>
+
+~~~bash
+python visualize_data.py -data toy -mode train -start_ind 140 -display_num 1
+~~~
+<p align="center">
+<img src="images/toy_train_140.png"  width="60%" height="60%">  
 </p>
 
 ~~~bash
