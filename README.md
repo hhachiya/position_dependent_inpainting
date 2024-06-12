@@ -1,6 +1,6 @@
 # Position-dependent inpainting
 
-This reposititory provides data and codes used in the paper Position-Dependent Partial Convolutions for Supervised Spatial Interpolation in [ACML2022](https://proceedings.mlr.press/v189/hachiya23a/hachiya23a.pdf) and [MLWA (submitted)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4311229). 
+This reposititory provides data and codes used in the paper Position-Dependent Partial Convolutions for Supervised Spatial Interpolation in [ACML2022](https://proceedings.mlr.press/v189/hachiya23a/hachiya23a.pdf) and [MLWA](https://www.sciencedirect.com/science/article/pii/S2666827023000671). 
 
 ## Requirement
 - Python 3
@@ -22,7 +22,7 @@ There are three datasets as follows:
 <p align="center">
 Fig. 1 Variability of the possible earthquake rupture parameters for the anticipated megathrust earthquakes in the Nankai trough.
 </p>
-All datasets (one toy and three for ground motion) consists of train, validation and test.  
+All datasets (one toy and three for ground motion) consist of train, validation, and test.  
 
 ### Preparation
 - Download all files from [googl drive](https://drive.google.com/drive/folders/1A8SPMM7OBdZfD8x2EeQ3G-pYih4hfINJ) and place them under ./data folder.
@@ -36,7 +36,7 @@ python visualize_data.py [-data] [-mode] [-cv] [-start_ind] [-display_num]
 - mode
     - String : name of mode, \'train\', \'test\', or \'valid\' (default=train)'
 - cv
-    - Int : number of cross validation, 0-9 (default=0)
+    - Int : number of cross-validation, 0-9 (default=0)
 - start_ind
     - Int : start index (default=0)
 - display_num
@@ -73,11 +73,20 @@ coming soon
 
 ## Citation
 ```
-@inproceedings{acml:hachiya:2022,
+@inproceedings{ACML:Hachiya:2022,
   title={Position-dependent partial convolutions for supervised spatial interpolation},
   author={Hirotaka Hachiya, Kotaro Nagayoshi, Asako Iwaki, Takahiro Maeda, Naonori Ueda, Hiroyuki Fujiwara},
   booktitle={Proceedings of the 14th Asian Conference on Machine Learning (ACML)},
   year={2022}
+}
+
+@article{MLWA:Hachiya:2023,
+  title={Position-dependent partial convolutions for supervised spatial interpolation},
+  author={Hachiya, Hirotaka and Nagayoshi, Kotaro and Iwaki, Asako and Maeda, Takahiro and Ueda, Naonori and Fujiwara, Hiroyuki},
+  journal={Machine Learning with Application},
+  volume={14},
+  year={2023},
+  publisher={Elsevier}
 }
 
 @article{SRL:Maeda:2016,
