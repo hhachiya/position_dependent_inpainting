@@ -10,7 +10,7 @@ This reposititory provides data and codes used in the paper Position-Dependent P
 - Toy dataset  
 To reproduce the problem of translation invariance in spatial interpolation, we designed an image of 256 * 256 to contain a rectangular object with different widths depending on its vertical position---narrow in the upper-half and wide in the lower-half, and the fixed mask containing several windows (see an example below) of the same width vertically where the rectangular objects in upper and lower-half look exactly same.
   
-- Simulated ground motion datasets
+- Simulated ground motion datasets  
 We created 360 rupture scenarios for the anticipated megathrust earthquakes in the Nankai trough (Maeda et al. (2016)) to generate simulated groundmotion (image of 512 * 512) by combining possible earthquake rupture parameters, including (a) the earthquake source area and magnitude, (b) the spatial pattern of the asperity locations, and (c) the location of the rupture initiation point, as depicted in Fig. 1. The mask is extreamly sparse (see examples below) and was created based on the location of strong motion stations, [K-NET and KiK-net](https://www.kyoshin.bosai.go.jp/kyoshin/db/index_en.html) where only 1,278 pixels are 1 (observed) and other 260,866 pixels are zero (unobserved).
 There are three datasets as follows:
     - All---all 360 scenarios using 10-fold cross-validation
